@@ -1,0 +1,23 @@
+@background-color:blue;
+@primary-color:#FFB400;
+
+body{
+    background:@background-color;
+}
+
+
+.btn{
+    padding:100px 15px;
+    border:0;
+    .border-radius(30px);
+  }
+  
+  .primary-btn:extend(.btn){
+    background: @primary-color;
+    .text-color(#fff);
+  }
+
+  
+h1, p{
+    .text-color(@primary-color);
+  }
